@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Support and FAQ for Mona Personal Finances iOS App - Get help with budgeting, receipt scanning, and more.">
+    <title>Support - Mona Personal Finances</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span>Mona</span>
+            </a>
+            <button class="nav-mobile-toggle" aria-label="Toggle navigation" onclick="toggleMobileMenu()">
+                ☰
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#screenshots">Screenshots</a></li>
+                <li><a href="index.html#privacy">Privacy</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <section class="content-page">
+        <div class="container-narrow">
+            <div class="text-center" style="margin-bottom: 3rem;">
+                <h1>Support & FAQ</h1>
+                <p style="font-size: 1.25rem; color: var(--color-text-secondary);">
+                    Find answers to common questions about Mona Personal Finances
+                </p>
+            </div>
+
+            <div class="faq-container">
+                <!-- Getting Started -->
+                <h2 style="margin-bottom: 2rem; color: var(--color-primary);">Getting Started</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">How do I add my first transaction?</div>
+                    <div class="faq-answer">
+                        <p>To add a transaction:</p>
+                        <ol>
+                            <li>Tap the "+" button in the navigation bar</li>
+                            <li>Select whether it's an Income or Expense</li>
+                            <li>Enter the amount</li>
+                            <li>Choose a category from the horizontal scroll</li>
+                            <li>Select an account</li>
+                            <li>Optionally add a note and adjust the date</li>
+                            <li>Tap "Add Transaction"</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How do I create a budget?</div>
+                    <div class="faq-answer">
+                        <p>Currently, budgets are managed in the Budgets tab. Navigate to the Budgets section where you can set spending limits for different categories and track your progress throughout the month.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How do I switch between accounts?</div>
+                    <div class="faq-answer">
+                        <p>You can view all your accounts in the Accounts tab. The app comes with pre-configured accounts (Cash, Bank, Credit Card, Savings, Investment), and each transaction is associated with a specific account.</p>
+                    </div>
+                </div>
+
+                <!-- Receipt Scanning -->
+                <h2 style="margin-top: 3rem; margin-bottom: 2rem; color: var(--color-primary);">Receipt Scanning</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">How does receipt scanning work?</div>
+                    <div class="faq-answer">
+                        <p>Mona uses on-device OCR (Optical Character Recognition) to extract information from receipt photos:</p>
+                        <ul>
+                            <li>When adding a transaction, tap the camera icon</li>
+                            <li>Take a photo of your receipt or select one from your photo library</li>
+                            <li>The app will automatically detect amounts, dates, and merchant names</li>
+                            <li>All processing happens on your device - no data is sent to servers</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Why isn't my receipt scanning accurately?</div>
+                    <div class="faq-answer">
+                        <p>For best results:</p>
+                        <ul>
+                            <li>Ensure good lighting when taking the photo</li>
+                            <li>Hold your device steady and parallel to the receipt</li>
+                            <li>Make sure the entire receipt is visible in the frame</li>
+                            <li>Clean receipts work better than wrinkled or faded ones</li>
+                            <li>You can always manually edit the extracted information</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Multi-Currency -->
+                <h2 style="margin-top: 3rem; margin-bottom: 2rem; color: var(--color-primary);">Multi-Currency</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">How do I add transactions in different currencies?</div>
+                    <div class="faq-answer">
+                        <p>Mona supports 40+ global currencies. When adding a transaction, you can select the currency for that specific transaction. The app will handle conversions automatically based on current exchange rates.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What is Travel Mode?</div>
+                    <div class="faq-answer">
+                        <p>Travel Mode is designed for frequent travelers. When enabled in Settings, it makes it easier to track expenses in foreign currencies with automatic conversion to your home currency for reporting and budgeting purposes.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Are exchange rates updated automatically?</div>
+                    <div class="faq-answer">
+                        <p>The app includes built-in exchange rates. Note that since all data is stored locally and the app doesn't connect to the internet for data purposes, exchange rates are based on the rates available at the time of the app version you're using.</p>
+                    </div>
+                </div>
+
+                <!-- Privacy & Security -->
+                <h2 style="margin-top: 3rem; margin-bottom: 2rem; color: var(--color-primary);">Privacy & Security</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">Is my financial data secure?</div>
+                    <div class="faq-answer">
+                        <p>Absolutely. Mona is designed with privacy as the top priority:</p>
+                        <ul>
+                            <li>All data is stored locally on your device using Apple's secure SwiftData framework</li>
+                            <li>No data is ever transmitted to servers or third parties</li>
+                            <li>No account creation or login required</li>
+                            <li>Your data is protected by your device's security (Face ID, Touch ID, passcode)</li>
+                        </ul>
+                        <p>For more details, read our <a href="privacy.html">Privacy Policy</a>.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Can I sync my data across devices?</div>
+                    <div class="faq-answer">
+                        <p>Currently, Mona does not offer cloud sync. All data is stored locally on your device. This design choice prioritizes your privacy by ensuring your financial data never leaves your device.</p>
+                        <p>Make sure to back up your iPhone regularly using iCloud or iTunes/Finder to prevent data loss.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What happens if I delete the app?</div>
+                    <div class="faq-answer">
+                        <p>If you delete Mona from your device, all locally stored data will be permanently deleted. We cannot recover your data because it never leaves your device.</p>
+                        <p>Before deleting the app, make sure you have a backup of your iPhone if you want to preserve your financial data.</p>
+                    </div>
+                </div>
+
+                <!-- Data Management -->
+                <h2 style="margin-top: 3rem; margin-bottom: 2rem; color: var(--color-primary);">Data Management</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">How do I edit or delete a transaction?</div>
+                    <div class="faq-answer">
+                        <p>To edit or delete a transaction:</p>
+                        <ol>
+                            <li>Go to the Transactions tab</li>
+                            <li>Tap on the transaction you want to modify</li>
+                            <li>Make your changes and save, or use the delete option</li>
+                        </ol>
+                        <p>You can also use the search feature to quickly find specific transactions.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Can I export my data?</div>
+                    <div class="faq-answer">
+                        <p>Data export features may be available in future updates. Currently, all data is stored in Apple's SwiftData format on your device and is included in your iPhone backups.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How do I back up my data?</div>
+                    <div class="faq-answer">
+                        <p>Your Mona data is automatically included when you back up your iPhone:</p>
+                        <ul>
+                            <li><strong>iCloud Backup:</strong> Go to Settings > [Your Name] > iCloud > iCloud Backup and enable it</li>
+                            <li><strong>Computer Backup:</strong> Connect your iPhone to your computer and use Finder (Mac) or iTunes (Windows) to create a backup</li>
+                        </ul>
+                        <p>When you restore your iPhone from a backup, your Mona data will be restored as well.</p>
+                    </div>
+                </div>
+
+                <!-- Technical -->
+                <h2 style="margin-top: 3rem; margin-bottom: 2rem; color: var(--color-primary);">Technical</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">What iOS version do I need?</div>
+                    <div class="faq-answer">
+                        <p>Mona Personal Finances requires iOS 17.0 or later. Make sure your device is updated to at least iOS 17 to use the app.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Does the app work on iPad?</div>
+                    <div class="faq-answer">
+                        <p>The app is designed for iPhone but may also work on iPad. Check the App Store listing for compatibility information.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Why does the app need camera and photo library access?</div>
+                    <div class="faq-answer">
+                        <p>Camera and photo library access are optional permissions used exclusively for the receipt scanning feature:</p>
+                        <ul>
+                            <li><strong>Camera:</strong> To take photos of receipts directly in the app</li>
+                            <li><strong>Photo Library:</strong> To select existing receipt photos</li>
+                        </ul>
+                        <p>All image processing happens on your device. No photos are transmitted to servers. You can use the app without granting these permissions by entering transactions manually.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Is the app free?</div>
+                    <div class="faq-answer">
+                        <p>Yes, Mona Personal Finances is currently free to download and use. All core features are available at no cost.</p>
+                    </div>
+                </div>
+
+                <!-- Troubleshooting -->
+                <h2 style="margin-top: 3rem; margin-bottom: 2rem; color: var(--color-primary);">Troubleshooting</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">The app is crashing or not working properly</div>
+                    <div class="faq-answer">
+                        <p>If you're experiencing issues:</p>
+                        <ol>
+                            <li>Make sure you have the latest version of the app from the App Store</li>
+                            <li>Ensure your iOS is updated to the latest version</li>
+                            <li>Try restarting your iPhone</li>
+                            <li>If the problem persists, contact support with details about the issue</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">My balance doesn't look correct</div>
+                    <div class="faq-answer">
+                        <p>Account balances are calculated automatically based on your transactions:</p>
+                        <ul>
+                            <li>Check that all transactions are categorized correctly (Income vs Expense)</li>
+                            <li>Verify that transactions are assigned to the correct accounts</li>
+                            <li>Look for duplicate transactions that may have been entered twice</li>
+                            <li>Ensure the date range filter is set correctly</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Support -->
+            <div class="contact-box" style="margin-top: 4rem;">
+                <h3>Still Need Help?</h3>
+                <p style="color: var(--color-text-secondary); margin-bottom: 1.5rem;">
+                    Can't find what you're looking for? We're here to help!
+                </p>
+                <a href="mailto:zeyar.oo.p@gmail.com?subject=Mona%20Personal%20Finances%20Support" style="font-size: 1.25rem; font-weight: 600;">
+                    Contact Support
+                </a>
+                <p style="margin-top: 1rem; font-size: 0.875rem; color: var(--color-text-tertiary);">
+                    Email: zeyar.oo.p@gmail.com
+                </p>
+            </div>
+
+            <!-- Feature Request -->
+            <div style="background-color: var(--color-bg-secondary); padding: 2rem; border-radius: var(--border-radius-lg); margin-top: 2rem; text-align: center;">
+                <h3>Have a Feature Request?</h3>
+                <p style="color: var(--color-text-secondary);">
+                    We'd love to hear your ideas for improving Mona. Send us your suggestions!
+                </p>
+                <a href="mailto:zeyar.oo.p@gmail.com?subject=Feature%20Request%20for%20Mona%20Personal%20Finances" class="btn btn-secondary" style="margin-top: 1rem;">
+                    Submit Feature Request
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mona Personal Finances</h3>
+                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.875rem;">
+                        Privacy-first budgeting app for iOS. All your data stays on your device.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Product</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#screenshots">Screenshots</a></li>
+                        <li><a href="index.html#privacy">Privacy</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:zeyar.oo.p@gmail.com">zeyar.oo.p@gmail.com</a></li>
+                        <li><a href="support.html">Get Support</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Zeyar Oo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

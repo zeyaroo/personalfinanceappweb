@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mona Personal Finances - Privacy-first budgeting app for iOS. Track expenses, manage budgets, scan receipts. Multi-currency support. All data stored locally on your device.">
+    <meta name="keywords" content="budget app, expense tracker, finance app, iOS, privacy, multi-currency, receipt scanner, mona">
+    <meta name="author" content="Zeyar Oo">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mona Personal Finances - Budget, Track & Save Money">
+    <meta property="og:description" content="Privacy-first finance tracker with multi-currency support and receipt scanning. All your data stays on your device.">
+    <meta property="og:url" content="https://yourusername.github.io/PersonalFinances">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mona Personal Finances - Budget, Track & Save Money">
+    <meta name="twitter:description" content="Privacy-first finance tracker with multi-currency support and receipt scanning.">
+
+    <title>Mona Personal Finances - Budget, Track & Save Money | Privacy-First iOS App</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon (update with your app icon) -->
+    <link rel="icon" type="image/png" href="screenshots/Simulator Screenshot - iPhone 17 - 2026-01-07 at 22.48.56.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span>Mona</span>
+            </a>
+            <button class="nav-mobile-toggle" aria-label="Toggle navigation" onclick="toggleMobileMenu()">
+                ☰
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#screenshots">Screenshots</a></li>
+                <li><a href="#privacy">Privacy</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badges fade-in">
+                <span class="badge">
+                    <span class="badge-icon">🔒</span>
+                    Privacy First
+                </span>
+                <span class="badge">
+                    <span class="badge-icon">💰</span>
+                    Multi-Currency
+                </span>
+                <span class="badge">
+                    <span class="badge-icon">📱</span>
+                    iOS 17+
+                </span>
+            </div>
+
+            <h1 class="fade-in">Take Control of Your Finances</h1>
+            <p class="hero-subtitle fade-in">A privacy-first budgeting app that keeps your financial data secure on your device. No cloud, no tracking, just you and your money.</p>
+
+            <div class="cta-container fade-in">
+                <!-- Update this link when your app is live on the App Store -->
+                <a href="#download" class="btn btn-primary">
+                    <span>Download on the</span>
+                    <span>App Store</span>
+                </a>
+                <a href="#features" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <div class="container">
+            <div class="text-center">
+                <h2>Everything You Need to Manage Your Money</h2>
+                <p style="font-size: 1.25rem; max-width: 700px; margin: 0 auto;">Simple, powerful features designed to help you understand your spending and achieve your financial goals.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">💳</div>
+                    <h3 class="feature-title">Multi-Currency Support</h3>
+                    <p class="feature-description">Track transactions in 40+ currencies with built-in exchange rates. Perfect for travelers and international businesses.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">📸</div>
+                    <h3 class="feature-title">Receipt Scanning</h3>
+                    <p class="feature-description">Snap a photo of your receipt and let OCR technology extract transaction details automatically. No more manual entry.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Budget Management</h3>
+                    <p class="feature-description">Set spending limits by category and track your progress. Stay on top of your budget with visual indicators.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🏦</div>
+                    <h3 class="feature-title">Multiple Accounts</h3>
+                    <p class="feature-description">Manage cash, bank accounts, credit cards, savings, and investments all in one place with automatic balance calculations.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🔄</div>
+                    <h3 class="feature-title">Recurring Transactions</h3>
+                    <p class="feature-description">Automate regular income and expenses. Set it once and let the app handle the rest.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🌙</div>
+                    <h3 class="feature-title">Dark Mode</h3>
+                    <p class="feature-description">Beautiful interface that adapts to your preference with full support for iOS light and dark modes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="section section-bg screenshots-section">
+        <div class="container">
+            <div class="text-center">
+                <h2>See It in Action</h2>
+                <p style="font-size: 1.25rem;">A clean, intuitive interface designed to make managing money effortless.</p>
+            </div>
+
+            <div class="screenshots-container">
+                <img src="screenshots/Simulator Screenshot - iPhone 17 - 2026-01-07 at 22.48.56.png" alt="Mona Personal Finances Dashboard showing balance and transactions" class="screenshot">
+                <img src="screenshots/Simulator Screenshot - iPhone 17 - 2026-01-07 at 22.49.12.png" alt="Transaction list view in Mona" class="screenshot">
+                <img src="screenshots/Simulator Screenshot - iPhone 17 - 2026-01-07 at 22.49.17.png" alt="Add transaction screen with categories" class="screenshot">
+                <img src="screenshots/Simulator Screenshot - iPhone 17 - 2026-01-07 at 22.49.22.png" alt="Budget tracking in Mona" class="screenshot">
+                <img src="screenshots/Simulator Screenshot - iPhone 17 - 2026-01-07 at 22.50.27.png" alt="Multi-account view" class="screenshot">
+                <img src="screenshots/Simulator Screenshot - iPhone 17 - 2026-01-07 at 22.51.10.png" alt="Settings and preferences" class="screenshot">
+                <img src="screenshots/Simulator Screenshot - iPhone 17 - 2026-01-07 at 22.51.34.png" alt="Category breakdown" class="screenshot">
+                <img src="screenshots/Simulator Screenshot - iPhone 17 - 2026-01-07 at 22.52.36.png" alt="Receipt scanning feature" class="screenshot">
+                <img src="screenshots/Simulator Screenshot - iPhone 17 - 2026-01-07 at 22.53.35.png" alt="Dark mode interface" class="screenshot">
+                <img src="screenshots/Simulator Screenshot - iPhone 17 - 2026-01-07 at 22.55.31.png" alt="Transaction details" class="screenshot">
+                <img src="screenshots/Simulator Screenshot - iPhone 17 - 2026-01-07 at 22.56.38.png" alt="Account overview" class="screenshot">
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section id="privacy" class="privacy-highlight">
+        <div class="container">
+            <h2>Your Data, Your Device</h2>
+            <p>Unlike other finance apps, Mona never sends your data to the cloud. Everything stays secure on your iPhone, protected by your device's security features.</p>
+
+            <div class="privacy-features">
+                <div class="privacy-feature">
+                    <h3>🔒 100% Local Storage</h3>
+                    <p>All your financial data is stored using Apple's secure SwiftData framework, right on your device.</p>
+                </div>
+
+                <div class="privacy-feature">
+                    <h3>🚫 No Account Required</h3>
+                    <p>No registration, no login, no personal information collected. Just download and start using.</p>
+                </div>
+
+                <div class="privacy-feature">
+                    <h3>📡 Zero Tracking</h3>
+                    <p>No analytics, no tracking, no data sharing with third parties. Your privacy is paramount.</p>
+                </div>
+
+                <div class="privacy-feature">
+                    <h3>🛡️ Device Security</h3>
+                    <p>Your data is protected by your iPhone's security features: Face ID, Touch ID, and passcode.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perfect For Section -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center">
+                <h2>Perfect For</h2>
+            </div>
+
+            <div class="features-grid" style="max-width: 900px; margin: 2rem auto 0;">
+                <div class="feature-card">
+                    <div class="feature-icon">👤</div>
+                    <h3 class="feature-title">Budget-Conscious Individuals</h3>
+                    <p class="feature-description">Track every dollar and stay within your spending limits with category-based budgets.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">✈️</div>
+                    <h3 class="feature-title">Frequent Travelers</h3>
+                    <p class="feature-description">Manage expenses in multiple currencies with automatic conversion and travel mode.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔐</div>
+                    <h3 class="feature-title">Privacy Advocates</h3>
+                    <p class="feature-description">Keep your financial data private with zero cloud sync and no data collection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Start Managing Your Money Smarter Today</h2>
+            <p>Download Mona and take the first step towards financial freedom.</p>
+
+            <div class="cta-container">
+                <!-- Update this link when your app is live on the App Store -->
+                <a href="#download" class="btn btn-primary">
+                    <span>Download on the</span>
+                    <span>App Store</span>
+                </a>
+            </div>
+
+            <p style="margin-top: 1.5rem; font-size: 0.875rem;">Free to download. Requires iOS 17.0 or later.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mona Personal Finances</h3>
+                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.875rem;">
+                        Privacy-first budgeting app for iOS. All your data stays on your device.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Product</h3>
+                    <ul class="footer-links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#screenshots">Screenshots</a></li>
+                        <li><a href="#privacy">Privacy</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:zeyar.oo.p@gmail.com">zeyar.oo.p@gmail.com</a></li>
+                        <li><a href="support.html">Get Support</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Zeyar Oo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for mobile menu toggle -->
+    <script>
+        function toggleMobileMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+
+        // Smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#download') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Add animation class when elements come into view
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .privacy-feature').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
